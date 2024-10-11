@@ -1,1 +1,26 @@
 /*  your css code here. If applicable */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.star {
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    clip-path: polygon(
+        50% 0%,    /* Top point */
+        61% 35%,   /* Top-right point */
+        98% 35%,   /* Right outer point */
+        68% 57%,   /* Bottom-right point */
+        79% 91%,   /* Bottom-right inner point */
+        50% 70%,   /* Bottom point */
+        21% 91%,   /* Bottom-left inner point */
+        32% 57%,   /* Bottom-left point */
+        2% 35%,    /* Left outer point */
+        39% 35%    /* Top-left point */
+    );
+}
